@@ -19,5 +19,24 @@
   "langList.uk": "Ukrainian",
   "langList.pl": "Polish",
 
-  "footer.copyrights": "All Rights Reserved. Build with"
+  "homepage.hero.title": "Shapoval Artem",
+  "homepage.hero.subtitle": "I am a front-end developer specializing in modern JavaScript frameworks with experience in React, Next.js, and Astro",
+
+  "homepage.overview.skills.title": "My Skills",
+  "homepage.overview.skills.description": "Technologies and tools I use",
+
+  "homepage.overview.education.title": "Education & Certifications",
+  "homepage.overview.education.description": "My educational background and professional achievements",
+
+  "homepage.overview.education.content.first": "Certificate from EPAM Front-End Developer Course",
+  "homepage.overview.education.content.second": "English proficiency confirmed by EPAM",
+  "homepage.overview.education.content.third": "Various coding challenges on HackerRank",
+
+  "homepage.projects.label": "My projects",
+
+  "footer.copyrights": "All Rights Reserved. Build with",
+
+  "notFound.message": "Something's missing",
+  "notFound.description": "Sorry, we can't find that page. You'll find lots to explore on the home page",
+  "notFound.back": "Back to Homepage"
 }

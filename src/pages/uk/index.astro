@@ -1,9 +1,14 @@
 ---
+import Btn from '@/components/Btn.astro';
+import Hero from '@/containers/homepage/Hero.astro';
+import Overview from '@/containers/homepage/Overview.astro';
 import Main from '@/layouts/Main.astro';
 ---
 
 <Main>
-  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate assumenda
-  laborum, doloremque ipsa quia commodi explicabo magnam itaque, rem alias ipsam
-  ad architecto expedita autem exercitationem? Ratione nam molestias quae!
+  <Hero />
+
+  <Overview />
+
+  <Btn label="My projects" href="/projects" />
 </Main>

@@ -1,0 +1,23 @@
+---
+import clsx from 'clsx';
+
+type Props = {
+  title: string;
+  subtitle: string;
+  className?: string;
+};
+
+const { title, subtitle, className = '' } = Astro.props;
+---
+
+<div class={clsx(`mx-auto max-w-screen-sm px-2 ${className}`)}>
+  <h2
+    class="mb-4 text-4xl font-extrabold tracking-tight text-secondary-foreground"
+  >
+    {title}
+  </h2>
+
+  <p class="mb-8 font-light text-muted-foreground sm:text-xl lg:mb-16">
+    {subtitle}
+  </p>
+</div>

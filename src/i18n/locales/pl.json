@@ -1,15 +1,15 @@
 {
   "web.title": "Resume",
 
-  "nav.home": "Strona główna",
+  "nav.home": "Główna",
   "nav.about": "O mnie",
   "nav.projects": "Projekty",
-  "nav.contacts": "Kontakty",
+  "nav.contacts": "Kontakt",
 
   "darkMode.light": "Jasny",
   "darkMode.dark": "Ciemny",
   "darkMode.system": "Systemowy",
-  "darkMode.toggle": "Przełącz motyw",
+  "darkMode.toggle": "Zmień motyw",
 
   "hamburger.label": "Menu nawigacyjne",
   "hamburger.open": "Otwórz menu",
@@ -19,5 +19,24 @@
   "langList.uk": "Ukraiński",
   "langList.pl": "Polski",
 
-  "footer.copyrights": "Wszelkie prawa zastrzeżone. Stworzone z"
+  "homepage.hero.title": "Szapował Artem",
+  "homepage.hero.subtitle": "Jestem front-end deweloperem specjalizującym się we współczesnych frameworkach JavaScript z doświadczeniem w React, Next.js i Astro",
+
+  "homepage.overview.skills.title": "Moje umiejętności",
+  "homepage.overview.skills.description": "Technologie i narzędzia, które używam",
+
+  "homepage.overview.education.title": "Edukacja i certyfikaty",
+  "homepage.overview.education.description": "Moje wykształcenie i osiągnięcia zawodowe",
+
+  "homepage.overview.education.content.first": "Certyfikat z kursu Front-End Developer w EPAM",
+  "homepage.overview.education.content.second": "Potwierdzony poziom angielskiego przez EPAM",
+  "homepage.overview.education.content.third": "Różne wyzwania programistyczne na HackerRank",
+
+  "homepage.projects.label": "Moje projekty",
+
+  "footer.copyrights": "Wszelkie prawa zastrzeżone. Stworzone przy użyciu",
+
+  "notFound.message": "Brakująca zawartość",
+  "notFound.description": "Przepraszamy, nie możemy znaleźć tej strony. Na stronie głównej znajdziesz wiele ciekawych rzeczy",
+  "notFound.back": "Powrót do strony głównej"
 }

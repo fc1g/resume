@@ -1,9 +1,10 @@
 ---
 import { Button } from '@/components/ui/button';
-import { getLangFromUrl } from '@/i18n/utils';
+import { getLangFromUrl, useTranslations } from '@/i18n/utils';
 import Base from '@/layouts/Base.astro';
 
 const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
 <Base>
@@ -17,14 +18,13 @@ const lang = getLangFromUrl(Astro.url);
       <p
         class="mb-4 text-3xl font-bold tracking-tight text-secondary-foreground md:text-4xl"
       >
-        Something&apos;s missing.
+        {t('notFound.message')}
       </p>
       <p class="mb-4 text-lg font-light text-muted-foreground">
-        Sorry, we can&apos;t find that page. You&apos;ll find lots to explore on
-        the home page.{' '}
+        {t('notFound.description')}
       </p>
       <a href={`/${lang}`}>
-        <Button variant="default"> Back to Homepage </Button>
+        <Button variant="default"> {t('notFound.back')} </Button>
       </a>
     </div>
   </section>

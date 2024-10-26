@@ -11,7 +11,7 @@
   "darkMode.system": "Системна",
   "darkMode.toggle": "Змінити тему",
 
-  "hamburger.label": "Навігаційне меню",
+  "hamburger.label": "Меню навігації",
   "hamburger.open": "Відкрити меню",
   "hamburger.close": "Закрити меню",
 
@@ -19,5 +19,24 @@
   "langList.uk": "Українська",
   "langList.pl": "Польська",
 
-  "footer.copyrights": "Усі права захищено. Створено за допомогою"
+  "homepage.hero.title": "Шаповал Артем",
+  "homepage.hero.subtitle": "Я front-end розробник, який спеціалізується на сучасних JavaScript-фреймворках та має досвід роботи з React, Next.js і Astro",
+
+  "homepage.overview.skills.title": "Мої навички",
+  "homepage.overview.skills.description": "Технології та інструменти, які я використовую",
+
+  "homepage.overview.education.title": "Освіта та сертифікації",
+  "homepage.overview.education.description": "Моя освітня база та професійні досягнення",
+
+  "homepage.overview.education.content.first": "Сертифікат про проходження курсу Front-End Developer від EPAM",
+  "homepage.overview.education.content.second": "Підтверджений рівень англійської мови від EPAM",
+  "homepage.overview.education.content.third": "Різноманітні завдання з програмування на HackerRank",
+
+  "homepage.projects.label": "Мої проєкти",
+
+  "footer.copyrights": "Всі права захищені. Створено за допомогою",
+
+  "notFound.message": "Сторінку не знайдено",
+  "notFound.description": "Вибачте, ми не можемо знайти цю сторінку. Ви знайдете багато цікавого на головній сторінці",
+  "notFound.back": "Назад до головної сторінки"
 }

@@ -1,9 +1,18 @@
 ---
+import Btn from '@/components/Btn.astro';
+import Hero from '@/containers/homepage/Hero.astro';
+import Overview from '@/containers/homepage/Overview.astro';
+import { getLangFromUrl, useTranslations } from '@/i18n/utils';
 import Main from '@/layouts/Main.astro';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
 <Main>
-  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate assumenda
-  laborum, doloremque ipsa quia commodi explicabo magnam itaque, rem alias ipsam
-  ad architecto expedita autem exercitationem? Ratione nam molestias quae!
+  <Hero />
+
+  <Overview />
+
+  <Btn label={t('homepage.projects.label')} href="/projects" />
 </Main>

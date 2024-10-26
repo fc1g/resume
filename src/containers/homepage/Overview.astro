@@ -1,0 +1,59 @@
+---
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from '@/components/ui/card';
+import { getLangFromUrl, useTranslations } from '@/i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+const data = [
+  {
+    title: t('homepage.overview.skills.title'),
+    description: t('homepage.overview.skills.description'),
+    content: [
+      'JavaScript (ES6+), TypeScript',
+      'React, Next.js, Astro',
+      'Node.js, Express.js',
+      'GraphQL, Apollo Client',
+      'Prisma',
+      'Tailwind CSS, scss, CSS3, HTML5',
+    ],
+  },
+  {
+    title: t('homepage.overview.education.title'),
+    description: t('homepage.overview.education.description'),
+    content: [
+      t('homepage.overview.education.content.first'),
+      t('homepage.overview.education.content.second'),
+      t('homepage.overview.education.content.third'),
+    ],
+  },
+];
+---
+
+<section
+  class="mx-auto -mt-7 flex max-w-screen-lg flex-wrap gap-4 sm:gap-8 lg:-mt-14"
+>
+  {
+    data.map(({ title, description, content }) => (
+      <Card className="text-center bg-primary-foreground flex-[1_1_350px]">
+        <CardHeader>
+          <CardTitle>{title}</CardTitle>
+          <CardDescription>{description}</CardDescription>
+        </CardHeader>
+        <CardContent>
+          <ul>
+            {content.map(el => (
+              <li>&bull; {el}</li>
+            ))}
+          </ul>
+        </CardContent>
+      </Card>
+    ))
+  }
+</section>

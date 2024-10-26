@@ -1,0 +1,20 @@
+---
+import { getLangFromUrl, useTranslatedPath } from '@/i18n/utils';
+import { Button } from './ui/button';
+
+const lang = getLangFromUrl(Astro.url);
+const translatePath = useTranslatedPath(lang);
+
+type Props = {
+  label: string;
+  href: string;
+};
+
+const { label, href } = Astro.props;
+---
+
+<div class="my-6 flex justify-center md:my-6">
+  <a tabindex="-1" href={translatePath(href, lang)}>
+    <Button size="lg">{label}</Button>
+  </a>
+</div>
