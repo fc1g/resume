@@ -1,0 +1,27 @@
+---
+import { getLangFromUrl } from '@/i18n/utils';
+
+type Props = {
+  href: string;
+  label: string;
+};
+
+const lang = getLangFromUrl(Astro.url);
+const { href, label } = Astro.props;
+---
+
+<li class="group">
+  <a
+    class="rounded focus:outline-offset-2 focus:outline-primary"
+    href={href}
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label={label}
+  >
+    <slot />
+
+    <span class="sr-only" lang={lang}>
+      {label}
+    </span>
+  </a>
+</li>

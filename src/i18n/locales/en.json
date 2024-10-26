@@ -1,3 +1,23 @@
 {
-  "web.title": "Resume"
+  "web.title": "Resume",
+
+  "nav.home": "Home",
+  "nav.about": "About",
+  "nav.projects": "Projects",
+  "nav.contacts": "Contacts",
+
+  "darkMode.light": "Light",
+  "darkMode.dark": "Dark",
+  "darkMode.system": "System",
+  "darkMode.toggle": "Toggle theme",
+
+  "hamburger.label": "Navigation menu",
+  "hamburger.open": "Open menu",
+  "hamburger.close": "Close menu",
+
+  "langList.en": "English",
+  "langList.uk": "Ukrainian",
+  "langList.pl": "Polish",
+
+  "footer.copyrights": "All Rights Reserved. Build with"
 }

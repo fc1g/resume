@@ -1,0 +1,65 @@
+---
+import { Button } from '../button';
+import Social from './Social.astro';
+
+import tools from '@/../data/tools.json';
+import { getLangFromUrl, useTranslations } from '@/i18n/utils';
+
+import { FaGithub, FaHackerrank, FaLinkedin } from 'react-icons/fa6';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<footer
+  class="my-1 flex-col space-y-4 p-1 text-center text-xs text-muted-foreground sm:my-2 sm:p-2 sm:text-sm md:lg:text-base lg:space-y-6"
+>
+  <div>
+    &copy; fc1g. {t('footer.copyrights')}{' '}
+    {
+      tools.map(({ href, label }, i) => {
+        const condition = i + 1 !== tools.length;
+
+        return (
+          <>
+            <Button
+              className="px-1 sm:px-2 text-xs md:text-base"
+              variant="link"
+              size="sm"
+            >
+              <a tabindex="-1" href={href}>
+                {' '}
+                {label}{' '}
+              </a>
+            </Button>
+
+            {condition && <span>&</span>}
+          </>
+        );
+      })
+    }
+  </div>
+
+  <ul class="flex items-center justify-center gap-6 md:gap-12">
+    <Social href="https://github.com/fc1g" label="GitHub">
+      <FaGithub
+        className="text-xl text-muted-foreground transition duration-300 group-hover:-translate-y-1 group-hover:text-secondary-foreground"
+      />
+    </Social>
+
+    <Social href="https://www.hackerrank.com/profile/fc1g_" label="HackerRank">
+      <FaHackerrank
+        className="text-xl text-muted-foreground transition duration-300 group-hover:-translate-y-1 group-hover:text-secondary-foreground"
+      />
+    </Social>
+
+    <Social
+      href="https://www.linkedin.com/in/artem-shapoval-29b724298/"
+      label="Linkedin"
+    >
+      <FaLinkedin
+        className="text-xl text-muted-foreground transition duration-300 group-hover:-translate-y-1 group-hover:text-secondary-foreground"
+      />
+    </Social>
+  </ul>
+</footer>

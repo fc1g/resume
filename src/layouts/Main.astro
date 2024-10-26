@@ -1,0 +1,25 @@
+---
+import Footer from '@/components/ui/footer/Footer.astro';
+import Header from '@/components/ui/header/Header.astro';
+import Base from './Base.astro';
+---
+
+<Base>
+  <div class="wrapper">
+    <Header />
+
+    <main class="flex-auto" role="main">
+      <slot />
+    </main>
+
+    <Footer />
+  </div>
+</Base>
+
+<style>
+  .wrapper {
+    display: flex;
+    min-height: 100%;
+    flex-direction: column;
+  }
+</style>

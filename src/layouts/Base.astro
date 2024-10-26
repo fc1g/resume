@@ -53,28 +53,6 @@ import '@/styles/globals.css';
   </head>
 
   <body class="h-full">
-    <div class="wrapper">
-      <header class="text-center">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis,
-        dicta.
-      </header>
-
-      <main class="flex-auto" role="main">
-        <slot />
-      </main>
-
-      <footer class="text-center">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati,
-        cupiditate!
-      </footer>
-    </div>
+    <slot />
   </body>
 </html>
-
-<style>
-  .wrapper {
-    display: flex;
-    min-height: 100%;
-    flex-direction: column;
-  }
-</style>

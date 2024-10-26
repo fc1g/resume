@@ -1,0 +1,9 @@
+---
+import { getLangFromUrl } from '@/i18n/utils';
+import WrappedHeader from './WrappedHeader';
+
+const lang = getLangFromUrl(Astro.url);
+const [, route] = Astro.url.pathname.split(lang);
+---
+
+<WrappedHeader client:load lang={lang} route={route} />

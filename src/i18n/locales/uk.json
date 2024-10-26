@@ -1,3 +1,23 @@
 {
-  "web.title": "Резюме"
+  "web.title": "Резюме",
+
+  "nav.home": "Головна",
+  "nav.about": "Про мене",
+  "nav.projects": "Проєкти",
+  "nav.contacts": "Контакти",
+
+  "darkMode.light": "Світла",
+  "darkMode.dark": "Темна",
+  "darkMode.system": "Системна",
+  "darkMode.toggle": "Змінити тему",
+
+  "hamburger.label": "Навігаційне меню",
+  "hamburger.open": "Відкрити меню",
+  "hamburger.close": "Закрити меню",
+
+  "langList.en": "Англійська",
+  "langList.uk": "Українська",
+  "langList.pl": "Польська",
+
+  "footer.copyrights": "Усі права захищено. Створено за допомогою"
 }

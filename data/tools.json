@@ -1,0 +1,10 @@
+[
+  {
+    "href": "https://astro.build/",
+    "label": "Astro"
+  },
+  {
+    "href": "https://tailwindcss.com/",
+    "label": "Tailwind CSS"
+  }
+]

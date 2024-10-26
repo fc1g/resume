@@ -1,3 +1,23 @@
 {
-  "web.title": "Życiorys"
+  "web.title": "Resume",
+
+  "nav.home": "Strona główna",
+  "nav.about": "O mnie",
+  "nav.projects": "Projekty",
+  "nav.contacts": "Kontakty",
+
+  "darkMode.light": "Jasny",
+  "darkMode.dark": "Ciemny",
+  "darkMode.system": "Systemowy",
+  "darkMode.toggle": "Przełącz motyw",
+
+  "hamburger.label": "Menu nawigacyjne",
+  "hamburger.open": "Otwórz menu",
+  "hamburger.close": "Zamknij menu",
+
+  "langList.en": "Angielski",
+  "langList.uk": "Ukraiński",
+  "langList.pl": "Polski",
+
+  "footer.copyrights": "Wszelkie prawa zastrzeżone. Stworzone z"
 }
