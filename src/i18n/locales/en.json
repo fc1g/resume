@@ -34,6 +34,9 @@
 
   "homepage.projects.label": "My projects",
 
+  "projects.title": "Recent Work",
+  "projects.subtitle": "Explore my projects built with React, Next.js, and more",
+
   "footer.copyrights": "All Rights Reserved. Build with",
 
   "notFound.message": "Something's missing",

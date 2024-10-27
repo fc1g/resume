@@ -34,6 +34,9 @@
 
   "homepage.projects.label": "Мої проєкти",
 
+  "projects.title": "Останні роботи",
+  "projects.subtitle": "Ознайомтесь із моїми проєктами, створеними за допомогою React, Next.js та інших технологій",
+
   "footer.copyrights": "Всі права захищені. Створено за допомогою",
 
   "notFound.message": "Сторінку не знайдено",

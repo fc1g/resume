@@ -1,0 +1,39 @@
+---
+import type { MarkdownInstance } from 'astro';
+
+type Props = {
+  data: MarkdownInstance<{
+    title: string;
+    description: string;
+  }>[];
+};
+
+const { data } = Astro.props;
+---
+
+<section class="mx-auto mb-8 max-w-screen-lg md:px-2 xl:px-0">
+  {
+    data.map(project => (
+      <div class="group rounded bg-primary-foreground transition duration-300 first:rounded-t-xl hover:scale-105">
+        <a
+          class="rounded outline-offset-2 focus:z-10 focus:outline-1 focus:outline-primary"
+          href={project.url}
+        >
+          <div class="flex items-center justify-between p-4">
+            <div class="text-sm font-medium">
+              <h3 class="text-lg font-bold">{project.frontmatter.title}</h3>
+
+              <p class="text-xs text-muted-foreground">
+                {project.frontmatter.description}
+              </p>
+            </div>
+            <span class="ml-4 text-muted-foreground transition duration-300 group-hover:text-primary">
+              →
+            </span>
+          </div>
+        </a>
+        <div class="border-b" />
+      </div>
+    ))
+  }
+</section>

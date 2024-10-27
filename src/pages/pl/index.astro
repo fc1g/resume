@@ -2,7 +2,11 @@
 import Btn from '@/components/Btn.astro';
 import Hero from '@/containers/homepage/Hero.astro';
 import Overview from '@/containers/homepage/Overview.astro';
+import { getLangFromUrl, useTranslations } from '@/i18n/utils';
 import Main from '@/layouts/Main.astro';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
 <Main>
@@ -10,5 +14,5 @@ import Main from '@/layouts/Main.astro';
 
   <Overview />
 
-  <Btn label="My projects" href="/projects" />
+  <Btn label={t('homepage.projects.label')} href="/projects" />
 </Main>

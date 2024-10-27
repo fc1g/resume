@@ -34,6 +34,9 @@
 
   "homepage.projects.label": "Moje projekty",
 
+  "projects.title": "Najnowsze projekty",
+  "projects.subtitle": "Poznaj moje projekty zbudowane z React, Next.js i więcej",
+
   "footer.copyrights": "Wszelkie prawa zastrzeżone. Stworzone przy użyciu",
 
   "notFound.message": "Brakująca zawartość",

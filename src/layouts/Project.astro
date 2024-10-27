@@ -1,0 +1,40 @@
+---
+import Title from '@/components/Title.astro';
+import type { MarkdownLayoutProps } from 'astro';
+import Main from './Main.astro';
+
+import image from '@/../public/adventure.jpg';
+import { Badge } from '@/components/ui/badge';
+
+type Props = MarkdownLayoutProps<{
+  title: string;
+  subtitle: string;
+  badges: string;
+}>;
+
+const { title, subtitle, badges } = Astro.props.frontmatter;
+---
+
+<Main>
+  <ul class="my-8 flex items-center justify-center gap-4">
+    {badges.split(',').map(badge => <Badge>{badge}</Badge>)}
+  </ul>
+
+  <Title
+    className="mb-8 text-center md:mb-16"
+    title={title}
+    subtitle={subtitle}
+  />
+
+  <figure class="mb-12 flex w-full flex-col gap-4">
+    <img src={image.src} alt="gsgsd" class="object-cover" />
+
+    <figcaption class="text-muted-foreground">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, fuga!
+    </figcaption>
+  </figure>
+
+  <div class="markdown mb-8 md:mb-16">
+    <slot />
+  </div>
+</Main>
