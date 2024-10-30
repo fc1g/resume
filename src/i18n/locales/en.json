@@ -51,8 +51,5 @@
 
   "notFound.message": "Something's missing",
   "notFound.description": "Sorry, we can't find that page. You'll find lots to explore on the home page",
-  "notFound.back": "Back to Homepage",
-
-  "error.message": "We are already working to solve the problem",
-  "error.pity": "Unfortunately, an error occurred"
+  "notFound.back": "Back to Homepage"
 }
