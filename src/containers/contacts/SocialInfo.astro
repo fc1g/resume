@@ -15,11 +15,8 @@ const t = useTranslations(lang);
     class="mx-auto flex max-w-screen-lg flex-col items-center justify-center gap-4 sm:flex-row"
   >
     <li class="flex w-52 items-center space-x-2 sm:flex-1 sm:justify-center">
-      <div
-        aria-label={t('contacts.email')}
-        class="rounded-xl bg-primary-foreground p-4"
-      >
-        <IoMailOutline className="size-6" />
+      <div class="rounded-xl bg-primary-foreground p-4">
+        <IoMailOutline aria-label={t('contacts.email')} className="size-6" />
       </div>
 
       <div>
@@ -35,11 +32,11 @@ const t = useTranslations(lang);
     </li>
 
     <li class="flex w-52 items-center space-x-2 sm:flex-1 sm:justify-center">
-      <div
-        aria-label={t('contacts.documentIcon')}
-        class="rounded-xl bg-primary-foreground p-4"
-      >
-        <IoDocumentOutline className="size-6" />
+      <div class="rounded-xl bg-primary-foreground p-4">
+        <IoDocumentOutline
+          aria-label={t('contacts.documentIcon')}
+          className="size-6"
+        />
       </div>
 
       <div>

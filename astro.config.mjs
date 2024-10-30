@@ -4,7 +4,7 @@ import react from '@astrojs/react';
 
 import tailwind from '@astrojs/tailwind';
 
-import vercel from '@astrojs/vercel/serverless';
+import vercelStatic from '@astrojs/vercel/static';
 
 export default defineConfig({
   i18n: {
@@ -18,6 +18,6 @@ export default defineConfig({
       applyBaseStyles: false,
     }),
   ],
-  output: 'server',
-  adapter: vercel(),
+  output: 'static',
+  adapter: vercelStatic(),
 });
