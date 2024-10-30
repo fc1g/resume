@@ -54,5 +54,5 @@
   "notFound.back": "Powrót do strony głównej",
 
   "error.message": "Już pracujemy nad rozwiązaniem problemu.",
-  "pity": "Niestety, wystąpił błąd."
+  "error.pity": "Niestety, wystąpił błąd."
 }
