@@ -35,7 +35,16 @@
   "homepage.projects.label": "Moje projekty",
 
   "projects.title": "Najnowsze projekty",
-  "projects.subtitle": "Poznaj moje projekty zbudowane z React, Next.js i więcej",
+  "projects.subtitle": "Kolekcja moich projektów: praktyczne przykłady moich umiejętności w rozwoju front-endu",
+
+  "contacts.title": "Informacje kontaktowe",
+  "contacts.subtitle": "Skontaktuj się ze mną przez e-mail. Moje linki do mediów społecznościowych oraz CV są poniżej.",
+
+  "contacts.email": "E-mail",
+  "contacts.certificates": "Certyfikaty",
+  "contacts.documentIcon": "Dokument",
+  "contacts.checkout": "Zobacz moje certyfikaty",
+  "contacts.download": "Pobierz resume",
 
   "footer.copyrights": "Wszelkie prawa zastrzeżone. Stworzone przy użyciu",
 

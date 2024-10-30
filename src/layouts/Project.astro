@@ -1,36 +1,88 @@
 ---
 import Title from '@/components/Title.astro';
-import type { MarkdownLayoutProps } from 'astro';
+import { Badge } from '@/components/ui/badge';
 import Main from './Main.astro';
 
-import image from '@/../public/adventure.jpg';
-import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button';
+import type { MarkdownLayoutProps } from 'astro';
+import Image from 'astro/components/Image.astro';
+
+const deskImages = import.meta.glob<{ default: ImageMetadata }>(
+  '/public/images/desktop/*.webp',
+);
+
+const mobileImages = import.meta.glob<{ default: ImageMetadata }>(
+  '/public/images/mobile/*.webp',
+);
 
 type Props = MarkdownLayoutProps<{
+  badges: string[];
   title: string;
   subtitle: string;
-  badges: string;
+  imagePath: string;
+  imageAltText: string;
+  data: {
+    href: string;
+    label: string;
+  }[];
 }>;
 
-const { title, subtitle, badges } = Astro.props.frontmatter;
+const { title, subtitle, badges, imagePath, imageAltText, data } =
+  Astro.props.frontmatter;
+
+const desk = `/public/images/desktop/${imagePath}`;
+const mobile = `/public/images/mobile/${imagePath}`;
+
+if (!deskImages[desk])
+  throw new Error(
+    `"${imagePath}" does not exist in glob: "public/desktop/*.webp"`,
+  );
+if (!mobileImages[mobile])
+  throw new Error(
+    `"${imagePath}" does not exist in glob: "public/mobile/*.webp"`,
+  );
 ---
 
 <Main>
-  <ul class="my-8 flex items-center justify-center gap-4">
-    {badges.split(',').map(badge => <Badge>{badge}</Badge>)}
+  <div class="my-8 flex flex-wrap items-center justify-center gap-4">
+    {badges.map(badge => <Badge>{badge}</Badge>)}
+  </div>
+
+  <Title className="text-center" title={title} subtitle={subtitle} />
+
+  <ul
+    class="mb-8 flex flex-wrap items-center justify-center gap-4 lg:-mt-6 lg:mb-16"
+  >
+    {
+      data.map(({ href, label }) => (
+        <li>
+          <a href={href} target="_blank" rel="noopener noreferrer">
+            <Button variant="link">{label}</Button>
+          </a>
+        </li>
+      ))
+    }
   </ul>
 
-  <Title
-    className="mb-8 text-center md:mb-16"
-    title={title}
-    subtitle={subtitle}
-  />
+  <figure class="mb-12 flex flex-col gap-4">
+    <Image
+      loading="eager"
+      decoding="async"
+      src={deskImages[desk]()}
+      alt={imageAltText}
+      class="hidden h-screen w-full object-cover object-center md:block"
+    />
 
-  <figure class="mb-12 flex w-full flex-col gap-4">
-    <img src={image.src} alt="gsgsd" class="object-cover" />
+    <Image
+      loading="eager"
+      decoding="async"
+      src={mobileImages[mobile]()}
+      alt={imageAltText}
+      class="h-screen w-full object-cover md:hidden"
+    />
 
     <figcaption class="text-muted-foreground">
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, fuga!
+      {imageAltText}
     </figcaption>
   </figure>
 

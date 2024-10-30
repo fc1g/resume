@@ -1,17 +1,21 @@
 ---
 layout: ../../../layouts/Project.astro
-badges: 'Astro,Tailwind CSS,shadcn,React'
-title: 'Lorem, ipsum dolor.'
-subtitle: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
-description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
+badges: ['Astro', 'Tailwind', 'Shadcn', 'React', 'Typescript']
+title: 'Życiorys'
+subtitle: 'Osobista strona z życiorys stworzona przy użyciu Astro, aby zaprezentować moje umiejętności'
+imagePath: 'resumeWebPicture.webp'
+imageAltText: 'Osoba pisząca na klawiaturze laptopa, z rozmytym monitorem w tle.'
+data: [{ href: 'https://github.com/fc1g/resume', label: 'Kod' }]
 ---
 
-Nisi duis ex aliqua eu officia eiusmod duis magna pariatur. Irure laborum qui aliqua nulla esse cillum laborum aliquip nulla elit. Id id Lorem duis irure cillum culpa. Nulla sint et aliqua velit do. Nulla sit sit proident consectetur enim ullamco aliqua in reprehenderit ullamco officia.
+Ten stroną resume, którą stworzyłem przy użyciu Astro, demonstruje moje umiejętności w zakresie rozwoju front-end. Oprócz tego, że daje firmom i rekruterom natychmiastowy dostęp do informacji o moim doświadczeniu, wygodnie prezentuje również moją pracę z nowoczesnymi frameworkami dzięki responsywnemu projektowi i wsparciu wielojęzycznemu.
 
-Ad ipsum velit sint enim exercitation mollit consequat elit mollit qui commodo aute. Laboris culpa voluptate aliquip incididunt duis. Cupidatat aliquip et sunt aute fugiat cupidatat irure voluptate. Occaecat officia et sunt.
+Do stylizacji wykorzystano Tailwind CSS i Shadcn, natomiast Astro posłużyło do stworzenia szybkiej i zoptymalizowanej strony internetowej. Użyłem TypeScript i React do dynamicznych komponentów, co poprawia niezawodność kodu.
 
-Officia tempor voluptate enim consequat cillum aute fugiat cupidatat incididunt magna labore in commodo. Eiusmod nostrud non deserunt. Incididunt excepteur pariatur magna. Proident aute ad in velit labore enim sit cillum ad mollit proident et qui. Esse sunt ullamco ullamco ipsum enim eu esse id eu exercitation laboris magna Lorem. Anim nostrud officia anim velit do exercitation labore mollit excepteur excepteur ex.
+Główne cele projektu to zaprezentowanie mojego portfolio projektów w przystępny sposób oraz stworzenie interaktywnej strony resume, która ukazuje moje umiejętności w zakresie rozwoju stron internetowych. Projekt pozwolił mi na eksperymentowanie z tworzeniem responsywnego i dwujęzycznego interfejsu oraz na szybkie ładowanie strony.
 
-Ipsum adipisicing exercitation dolor pariatur labore qui. Culpa cupidatat ea elit eiusmod tempor ea qui dolor Lorem laborum adipisicing. Ad ea laboris qui cupidatat deserunt culpa. Nulla ex velit adipisicing proident fugiat deserunt sunt eu adipisicing sint incididunt quis qui. Nulla fugiat labore duis ullamco reprehenderit excepteur laboris tempor ullamco aliquip laborum aliqua. Est tempor nisi magna ut elit pariatur commodo.
+Pracowałem nad każdym etapem procesu rozwoju, od projektowania i planowania po kodowanie i optymalizację. Użyłem Astro do pełnej implementacji front-endu, skonfigurowałem style, wykorzystałem TypeScript i React do stworzenia dynamicznych komponentów oraz zapewniłem responsywność i wielojęzyczność strony.
 
-Labore commodo do incididunt amet ad et exercitation magna veniam veniam aute laboris excepteur occaecat Lorem. Fugiat in magna commodo magna nulla eu. Fugiat nulla aliqua sunt duis enim irure aliquip fugiat aliqua Lorem ad tempor incididunt proident incididunt. Labore fugiat tempor esse cillum voluptate culpa anim sunt consequat. Ipsum minim nostrud laborum sit aliquip duis officia consequat est. Fugiat mollit elit nulla. Sit minim est elit labore. Sunt eu pariatur pariatur ut deserunt nulla labore in non sit tempor voluptate ex.
+Główne cechy projektu obejmują wsparcie dla wielu języków, przyjazny dla urządzeń mobilnych projekt, interaktywne portfolio oraz nowoczesną stylizację. Optymalizacja gwarantuje szybkie ładowanie i łatwą nawigację, a dynamiczne komponenty zwiększają bezpieczeństwo kodu.
+
+Podczas pracy nad tym projektem zdobyłem dużo wiedzy i umiejętności, korzystając z Astro jako potężnego narzędzia do tworzenia szybkich stron internetowych. Choć to moja pierwsza strona stworzona przy użyciu Astro, na pewno nie ostatnia, ponieważ wierzę w potencjał tej technologii i planuję korzystać z niej w innych projektach w przyszłości.

@@ -1,17 +1,21 @@
 ---
 layout: ../../../layouts/Project.astro
-badges: 'Astro,Tailwind CSS,shadcn,React'
-title: 'Lorem, ipsum dolor.'
-subtitle: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
-description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
+badges: ['Astro', 'Tailwind CSS', 'Shadcn', 'React', 'Typescript']
+title: 'Resume'
+subtitle: 'Personal resume website created with Astro to showcase my knowledge'
+imagePath: 'resumeWebPicture.webp'
+imageAltText: 'Person typing on a laptop keyboard with a blurred monitor in the background.'
+data: [{ href: 'https://github.com/fc1g/resume', label: 'Code' }]
 ---
 
-Nisi duis ex aliqua eu officia eiusmod duis magna pariatur. Irure laborum qui aliqua nulla esse cillum laborum aliquip nulla elit. Id id Lorem duis irure cillum culpa. Nulla sint et aliqua velit do. Nulla sit sit proident consectetur enim ullamco aliqua in reprehenderit ullamco officia.
+This resume website, which I made with Astro, demonstrates my front-end development abilities. In addition to giving companies and recruiters instant access to details about my background, it also conveniently showcases my work with contemporary frameworks because of its responsive design and multilingual support.
 
-Ad ipsum velit sint enim exercitation mollit consequat elit mollit qui commodo aute. Laboris culpa voluptate aliquip incididunt duis. Cupidatat aliquip et sunt aute fugiat cupidatat irure voluptate. Occaecat officia et sunt.
+Tailwind CSS and Shadcn were used to implement the styling, while Astro was utilized to create a quick and optimized website. I used TypeScript and React for dynamic components, which improves the code's dependability.
 
-Officia tempor voluptate enim consequat cillum aute fugiat cupidatat incididunt magna labore in commodo. Eiusmod nostrud non deserunt. Incididunt excepteur pariatur magna. Proident aute ad in velit labore enim sit cillum ad mollit proident et qui. Esse sunt ullamco ullamco ipsum enim eu esse id eu exercitation laboris magna Lorem. Anim nostrud officia anim velit do exercitation labore mollit excepteur excepteur ex.
+The project's primary objectives were to display my project portfolio in an approachable manner and to produce an interactive resume website that showcases my web development abilities. I was able to experiment developing a responsive and bilingual interface and making the site load quickly thanks to the project.
 
-Ipsum adipisicing exercitation dolor pariatur labore qui. Culpa cupidatat ea elit eiusmod tempor ea qui dolor Lorem laborum adipisicing. Ad ea laboris qui cupidatat deserunt culpa. Nulla ex velit adipisicing proident fugiat deserunt sunt eu adipisicing sint incididunt quis qui. Nulla fugiat labore duis ullamco reprehenderit excepteur laboris tempor ullamco aliquip laborum aliqua. Est tempor nisi magna ut elit pariatur commodo.
+I worked on every phase of the development process, from design and planning to coding and optimization. I used Astro to fully implement the frontend, configured the styles, used TypeScript and React to create dynamic components, and made sure the website was responsive and multilingual.
 
-Labore commodo do incididunt amet ad et exercitation magna veniam veniam aute laboris excepteur occaecat Lorem. Fugiat in magna commodo magna nulla eu. Fugiat nulla aliqua sunt duis enim irure aliquip fugiat aliqua Lorem ad tempor incididunt proident incididunt. Labore fugiat tempor esse cillum voluptate culpa anim sunt consequat. Ipsum minim nostrud laborum sit aliquip duis officia consequat est. Fugiat mollit elit nulla. Sit minim est elit labore. Sunt eu pariatur pariatur ut deserunt nulla labore in non sit tempor voluptate ex.
+The project's main characteristics include multilingual support, a mobile-friendly design, an interactive portfolio, and contemporary styling. The optimization guarantees quick loading and simple navigation, while the dynamic components enhance code security.
+
+I gained a lot of knowledge and proficiency using Astro as a potent tool for creating quick websites during this project. Although this is my first website created using Astro, it won't be my last because I am sure of the technology's potential and intend to use it in other projects in the future.

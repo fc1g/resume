@@ -1,27 +1,23 @@
 ---
 import Title from '@/components/Title.astro';
+import SocialInfo from '@/containers/contacts/SocialInfo.astro';
 import Main from '@/layouts/Main.astro';
 
-import ProjectsList from '@/containers/projects/ProjectsList.astro';
 import { getLangFromUrl, useTranslations } from '@/i18n/utils';
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
-
-const data = await Astro.glob<{
-  title: string;
-  subtitle: string;
-}>('./projects/*.md');
 ---
 
 <Main>
   <div class="mt-2 pb-8 pt-2 sm:ml-[7.5rem] md:ml-32">
     <Title
       className="text-center sm:text-start"
-      title={t('projects.title')}
-      subtitle={t('projects.subtitle')}
+      title={t('contacts.title')}
+      subtitle={t('contacts.subtitle')}
     />
   </div>
 
-  <ProjectsList data={data} />
+  <!-- TODO: RESUME -->
+  <SocialInfo />
 </Main>

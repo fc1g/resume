@@ -4,7 +4,7 @@ import type { MarkdownInstance } from 'astro';
 type Props = {
   data: MarkdownInstance<{
     title: string;
-    description: string;
+    subtitle: string;
   }>[];
 };
 
@@ -24,7 +24,7 @@ const { data } = Astro.props;
               <h3 class="text-lg font-bold">{project.frontmatter.title}</h3>
 
               <p class="text-xs text-muted-foreground">
-                {project.frontmatter.description}
+                {project.frontmatter.subtitle}
               </p>
             </div>
             <span class="ml-4 text-muted-foreground transition duration-300 group-hover:text-primary">

@@ -1,17 +1,33 @@
 ---
 layout: ../../../layouts/Project.astro
-badges: 'Astro,Tailwind CSS,shadcn,React'
-title: 'Lorem, ipsum dolor.'
-subtitle: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
-description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
+badges: ['Next', 'Typescript', 'Tailwind CSS', 'Shadcn', 'Mongodb', 'Prisma']
+title: 'CasaBlanca'
+subtitle: 'Цей проєкт — це веб-сайт для оренди будинку в Іспанії для відпочинку.'
+imagePath: 'terasaEnter.webp'
+imageAltText: 'Сучасна тераса на даху з двома шезлонгами, невеликим боковим столиком і скляними поручнями. Сходи ведуть на верхній рівень. Білий фасад будівлі під чистим блакитним небом.'
+data:
+  [
+    { href: 'https://casablanca.ovh', label: 'Сайт' },
+    { href: 'https://github.com/fc1g/next-blanca', label: 'Код' },
+  ]
 ---
 
-Nisi duis ex aliqua eu officia eiusmod duis magna pariatur. Irure laborum qui aliqua nulla esse cillum laborum aliquip nulla elit. Id id Lorem duis irure cillum culpa. Nulla sint et aliqua velit do. Nulla sit sit proident consectetur enim ullamco aliqua in reprehenderit ullamco officia.
+Цей веб-сайт є вдосконаленою версією сайту з оренди нерухомості, який спрощує процес бронювання та надає користувачам всю інформацію, необхідну для прийняття мудрих рішень. Одним з основних поліпшень є можливість власника керувати даними на сайті, що робить легким оновлення деталей про нерухомість та бронювання.
 
-Ad ipsum velit sint enim exercitation mollit consequat elit mollit qui commodo aute. Laboris culpa voluptate aliquip incididunt duis. Cupidatat aliquip et sunt aute fugiat cupidatat irure voluptate. Occaecat officia et sunt.
+Для створення сайту використано Next.js, що забезпечує серверну рендеринг та підвищену продуктивність, тоді як TypeScript гарантує безпеку типів і покращує досвід розробника. Shadcn надає попередньо створені компоненти для швидшого будівництва, а Tailwind CSS використовується для створення адаптивного та сучасного вигляду. MongoDB використовується як база даних для зберігання інформації про нерухомість і бронювання, а Prisma застосовується як ORM для покращення управління даними та забезпечення взаємодії з базою даних.
 
-Officia tempor voluptate enim consequat cillum aute fugiat cupidatat incididunt magna labore in commodo. Eiusmod nostrud non deserunt. Incididunt excepteur pariatur magna. Proident aute ad in velit labore enim sit cillum ad mollit proident et qui. Esse sunt ullamco ullamco ipsum enim eu esse id eu exercitation laboris magna Lorem. Anim nostrud officia anim velit do exercitation labore mollit excepteur excepteur ex.
+Мета сайту — надати повну платформу для управління однією нерухомістю для відпочинку, що дозволяє власнику ефективно керувати оголошеннями та бронюваннями, при цьому надаючи потенційним орендарям зручний інтерфейс для пошуку та бронювання їхньої ідеальної відпустки. Додавши функції, що полегшують обслуговування для власника, і надаючи корисну інформацію орендарям, цей проєкт має на меті покращити весь процес оренди.
 
-Ipsum adipisicing exercitation dolor pariatur labore qui. Culpa cupidatat ea elit eiusmod tempor ea qui dolor Lorem laborum adipisicing. Ad ea laboris qui cupidatat deserunt culpa. Nulla ex velit adipisicing proident fugiat deserunt sunt eu adipisicing sint incididunt quis qui. Nulla fugiat labore duis ullamco reprehenderit excepteur laboris tempor ullamco aliquip laborum aliqua. Est tempor nisi magna ut elit pariatur commodo.
+Як головний розробник цього проєкту, я відповідав за весь процес розробки. Серед моїх обов’язків було впровадження фронтенд- і бекенд-складових сайту, їх безшовна інтеграція та забезпечення оптимальної функціональності. Я також вніс свій внесок у дизайнерські елементи, щоб забезпечити зручний інтерфейс, що відповідає вимогам як власника нерухомості, так і потенційних орендарів.
 
-Labore commodo do incididunt amet ad et exercitation magna veniam veniam aute laboris excepteur occaecat Lorem. Fugiat in magna commodo magna nulla eu. Fugiat nulla aliqua sunt duis enim irure aliquip fugiat aliqua Lorem ad tempor incididunt proident incididunt. Labore fugiat tempor esse cillum voluptate culpa anim sunt consequat. Ipsum minim nostrud laborum sit aliquip duis officia consequat est. Fugiat mollit elit nulla. Sit minim est elit labore. Sunt eu pariatur pariatur ut deserunt nulla labore in non sit tempor voluptate ex.
+Дизайн сайту зручний для користувачів і привертає увагу до орендованого будинку, пропонуючи важливу інформацію для потенційних орендарів. Однією з основних функцій є показ одного об'єкта, присвячений демонстрації єдиного орендованого будинку, що дозволяє цілеспрямовано представити його унікальні характеристики.
+
+Система управління власником є важливим поліпшенням, що спрощує власнику підтримку оголошень і оновлення даних, гарантуючи, що вся інформація є точною та актуальною.
+
+Завдяки своїй повній адаптивності дизайн забезпечує найкращий досвід перегляду на різних пристроях, включаючи смартфони, планшети та ПК. Користувачі мають доступ до всебічної інформації про нерухомість, такої як особливості, умови оренди та місцеві атракції.
+
+Сайт також пропонує спрощений процес бронювання, який полегшує потенційним орендарям можливість робити бронювання або запити. Нерухомість підкреслена відмінними фотографіями та захоплюючим текстом, надаючи користувачам цікавий і пізнавальний досвід.
+
+Разом ці функції покращують досвід користувачів і роблять управління нерухомістю більш ефективним.
+
+Досвід роботи над цим проєктом був неймовірним, і я дуже в захваті від Next.js. Ця платформа дозволила мені створити плавний і ефективний веб-сайт, який не лише підкреслює орендований будинок, але й спрощує управління ним для власника. Її потужні функції та гнучкість значно покращили мій процес розробки, забезпечуючи швидке розгортання та якісний фінальний результат. У наступних проєктах я з нетерпінням чекаю можливості дослідити ще більше можливостей Next.js!

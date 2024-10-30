@@ -1,17 +1,33 @@
 ---
 layout: ../../../layouts/Project.astro
-badges: 'Astro,Tailwind CSS,shadcn,React'
-title: 'Lorem, ipsum dolor.'
-subtitle: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
-description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
+badges: ['Next', 'Typescript', 'Tailwind CSS', 'Shadcn', 'Mongodb', 'Prisma']
+title: 'CasaBlanca'
+subtitle: 'Ten projekt to strona internetowa dla wynajmu domu w Hiszpanii na wakacje.'
+imagePath: 'terasaEnter.webp'
+imageAltText: 'Nowoczesny taras na dachu z dwoma leżakami, małym stolikiem bocznym i szklaną balustradą. Schody prowadzą na wyższy poziom. Biały budynek z zewnątrz pod czystym, niebieskim niebem.'
+data:
+  [
+    { href: 'https://casablanca.ovh', label: 'Strona' },
+    { href: 'https://github.com/fc1g/next-blanca', label: 'Kod' },
+  ]
 ---
 
-Nisi duis ex aliqua eu officia eiusmod duis magna pariatur. Irure laborum qui aliqua nulla esse cillum laborum aliquip nulla elit. Id id Lorem duis irure cillum culpa. Nulla sint et aliqua velit do. Nulla sit sit proident consectetur enim ullamco aliqua in reprehenderit ullamco officia.
+Ten serwis internetowy jest ulepszoną wersją strony z wynajmem nieruchomości, która ułatwia rezerwację i dostarcza użytkownikom wszelkich informacji niezbędnych do podejmowania mądrych decyzji. Jednym z głównych ulepszeń jest możliwość właściciela do zarządzania danymi na stronie, co umożliwia łatwe aktualizowanie szczegółów dotyczących nieruchomości i rezerwacji.
 
-Ad ipsum velit sint enim exercitation mollit consequat elit mollit qui commodo aute. Laboris culpa voluptate aliquip incididunt duis. Cupidatat aliquip et sunt aute fugiat cupidatat irure voluptate. Occaecat officia et sunt.
+Podczas gdy TypeScript zapewnia bezpieczeństwo typów i poprawia doświadczenia dewelopera, Next.js jest używany do renderowania po stronie serwera oraz poprawy wydajności w budowie strony internetowej. Shadcn dostarcza gotowe komponenty do szybszej budowy, a Tailwind CSS jest używany do uzyskania responsywnego i nowoczesnego wyglądu. Prisma jest wykorzystywana jako ORM do poprawy zarządzania danymi i umożliwienia interakcji z bazą danych, natomiast MongoDB służy jako baza danych do przechowywania informacji o nieruchomości i rezerwacjach.
 
-Officia tempor voluptate enim consequat cillum aute fugiat cupidatat incididunt magna labore in commodo. Eiusmod nostrud non deserunt. Incididunt excepteur pariatur magna. Proident aute ad in velit labore enim sit cillum ad mollit proident et qui. Esse sunt ullamco ullamco ipsum enim eu esse id eu exercitation laboris magna Lorem. Anim nostrud officia anim velit do exercitation labore mollit excepteur excepteur ex.
+Celem strony internetowej jest zapewnienie kompleksowej platformy do zarządzania jedną nieruchomością wakacyjną, umożliwiając właścicielowi skuteczne zarządzanie ogłoszeniami i rezerwacjami, jednocześnie oferując przyszłym najemcom łatwy w obsłudze interfejs do znalezienia i zarezerwowania wymarzonego miejsca na wakacje. Dodając funkcje, które ułatwiają właścicielowi utrzymanie, i dostarczając najemcom użytecznych informacji, ten projekt ma na celu poprawę całego doświadczenia wynajmu.
 
-Ipsum adipisicing exercitation dolor pariatur labore qui. Culpa cupidatat ea elit eiusmod tempor ea qui dolor Lorem laborum adipisicing. Ad ea laboris qui cupidatat deserunt culpa. Nulla ex velit adipisicing proident fugiat deserunt sunt eu adipisicing sint incididunt quis qui. Nulla fugiat labore duis ullamco reprehenderit excepteur laboris tempor ullamco aliquip laborum aliqua. Est tempor nisi magna ut elit pariatur commodo.
+Jako główny deweloper tego projektu byłem odpowiedzialny za cały proces rozwoju. Do moich obowiązków należało wdrażanie komponentów front-end i back-end, ich bezproblemowa integracja oraz zapewnienie optymalnej funkcjonalności. Również przyczyniłem się do aspektów projektowych, aby zapewnić przyjazny interfejs użytkownika, który spełnia wymagania zarówno właściciela nieruchomości, jak i potencjalnych najemców.
 
-Labore commodo do incididunt amet ad et exercitation magna veniam veniam aute laboris excepteur occaecat Lorem. Fugiat in magna commodo magna nulla eu. Fugiat nulla aliqua sunt duis enim irure aliquip fugiat aliqua Lorem ad tempor incididunt proident incididunt. Labore fugiat tempor esse cillum voluptate culpa anim sunt consequat. Ipsum minim nostrud laborum sit aliquip duis officia consequat est. Fugiat mollit elit nulla. Sit minim est elit labore. Sunt eu pariatur pariatur ut deserunt nulla labore in non sit tempor voluptate ex.
+Przyjazny dla użytkownika styl strony zwraca uwagę na wynajmowane mieszkanie i oferuje kluczowe informacje dla przyszłych najemców. Jedną z głównych cech jest pokazanie jednego obiektu, które jest poświęcone prezentacji jednego wynajmowanego domu, co umożliwia ukierunkowane przedstawienie jego unikalnych cech.
+
+System zarządzania właścicielem jest istotnym ulepszeniem, które ułatwia właścicielowi utrzymanie ogłoszeń i aktualizację danych, gwarantując, że wszystkie informacje są poprawne i aktualne.
+
+Dzięki pełnej responsywności, projekt oferuje najlepsze możliwe doświadczenia wizualne na różnych urządzeniach, w tym smartfonach, tabletach i komputerach PC. Użytkownicy mają dostęp do szczegółowych informacji o nieruchomości, takich jak cechy, warunki wynajmu i okoliczne atrakcje.
+
+Strona internetowa oferuje również uproszczony proces rezerwacji, który ułatwia przyszłym najemcom dokonywanie rezerwacji lub zapytań. Nieruchomość jest podkreślona doskonałymi zdjęciami i intrygującym tekstem, co zapewnia użytkownikom interesujące i pouczające doświadczenie.
+
+Te wszystkie cechy wspólnie poprawiają doświadczenie użytkowników i czynią zarządzanie nieruchomością bardziej efektywnym.
+
+Doświadczenie pracy nad tym projektem było niesamowite, a ja jestem niezwykle podekscytowany Next.js. Ten framework umożliwił mi stworzenie płynnej i efektywnej strony internetowej, która nie tylko podkreśla wynajmowany dom, ale także ułatwia właścicielowi zarządzanie nim. Jego silne cechy i elastyczność znacznie poprawiły mój proces rozwoju, umożliwiając szybkie wdrożenie i dobrze zrealizowany końcowy wynik. W nadchodzących projektach cieszę się na możliwość dalszego badania możliwości Next.js!

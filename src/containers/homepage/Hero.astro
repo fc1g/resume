@@ -1,7 +1,8 @@
 ---
-import image from '@/../public/image.webp';
+import myPhoto from '@/../public/image.webp';
 import Title from '@/components/Title.astro';
 import { getLangFromUrl, useTranslations } from '@/i18n/utils';
+import Image from 'astro/components/Image.astro';
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -10,11 +11,14 @@ const t = useTranslations(lang);
 <section
   class="mt-2 flex flex-col items-center justify-center pb-8 pt-2 sm:flex-row sm:items-start"
 >
-  <img
-    src={image.src}
+  <Image
+    loading="eager"
+    decoding="async"
+    src={myPhoto}
     alt={`${t('homepage.hero.title')}'s website`}
-    class="sm:w-22 sm:h-22 mb-4 h-20 w-20 rounded-full sm:mb-0 sm:mr-8 md:h-24 md:w-24"
+    class="sm:w-22 sm:h-22 mb-4 h-20 w-20 rounded-full object-cover sm:mb-0 sm:mr-8 md:h-24 md:w-24"
   />
+
   <div>
     <Title
       className="text-center sm:text-start"

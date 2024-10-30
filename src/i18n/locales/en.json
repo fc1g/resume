@@ -35,7 +35,16 @@
   "homepage.projects.label": "My projects",
 
   "projects.title": "Recent Work",
-  "projects.subtitle": "Explore my projects built with React, Next.js, and more",
+  "projects.subtitle": "A Collection of My Projects: Practical Examples of My Front-End Development Skills",
+
+  "contacts.title": "Contact Information",
+  "contacts.subtitle": "Feel free to reach out via email. You can also find my social media links and resume download below.",
+
+  "contacts.email": "Email",
+  "contacts.certificates": "Certificates",
+  "contacts.documentIcon": "Document",
+  "contacts.checkout": "Check out my certificates",
+  "contacts.download": "Download resume",
 
   "footer.copyrights": "All Rights Reserved. Build with",
 

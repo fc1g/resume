@@ -1,17 +1,28 @@
 ---
 layout: ../../../layouts/Project.astro
-badges: 'Astro,Tailwind CSS,shadcn,React'
-title: 'Lorem, ipsum dolor.'
-subtitle: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
-description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
+badges: ['React', 'Typescript', 'Express', 'Tailwind CSS', 'Mongodb']
+title: 'CasaBlanca (Стара версія)'
+subtitle: 'Цей проєкт — це веб-сайт для оренди будинку в Іспанії для відпочинку.'
+imagePath: 'terasaEnter.webp'
+imageAltText: 'Сучасна тераса на даху з двома шезлонгами, невеликим боковим столиком і скляними поручнями. Сходи ведуть на верхній рівень. Білий фасад будівлі під чистим блакитним небом.'
+data:
+  [
+    { href: 'https://casa-blanca-lovat.vercel.app', label: 'Сайт' },
+    { href: 'https://github.com/fc1g/casaBlanca', label: 'Код' },
+    { href: 'https://github.com/fc1g/casaServer', label: 'Код серверу' },
+  ]
 ---
 
-Nisi duis ex aliqua eu officia eiusmod duis magna pariatur. Irure laborum qui aliqua nulla esse cillum laborum aliquip nulla elit. Id id Lorem duis irure cillum culpa. Nulla sint et aliqua velit do. Nulla sit sit proident consectetur enim ullamco aliqua in reprehenderit ullamco officia.
+Цей проєкт — це веб-сайт, створений для висвітлення орендованого будинку в Іспанії, з акцентом на потенційних орендарів, які шукають затишне місце для проживання. Сучасний і адаптивний дизайн веб-сайту покращує досвід користувачів.
 
-Ad ipsum velit sint enim exercitation mollit consequat elit mollit qui commodo aute. Laboris culpa voluptate aliquip incididunt duis. Cupidatat aliquip et sunt aute fugiat cupidatat irure voluptate. Occaecat officia et sunt.
+Я вирішив використовувати React для фронтенду, оскільки він дозволяє динамічно відображати деталі про будинок, включаючи фотографії, описи та іншу важливу інформацію. Бекенд працює на базі Express.js, який відповідає за управління даними про майно та обробку запитів. Усі дані про будинок і бронювання зберігаються в базі даних MongoDB. Я використовував Tailwind CSS для стилізації інтерфейсу, що надає йому охайного та стильного вигляду.
 
-Officia tempor voluptate enim consequat cillum aute fugiat cupidatat incididunt magna labore in commodo. Eiusmod nostrud non deserunt. Incididunt excepteur pariatur magna. Proident aute ad in velit labore enim sit cillum ad mollit proident et qui. Esse sunt ullamco ullamco ipsum enim eu esse id eu exercitation laboris magna Lorem. Anim nostrud officia anim velit do exercitation labore mollit excepteur excepteur ex.
+Головна мета проєкту — спростити процес бронювання орендованого будинку та надати користувачам усю необхідну інформацію для прийняття обґрунтованих рішень. Як головний розробник проєкту, я відповідав за інтеграцію фронтенд і бекенд компонентів та їх реалізацію. Та також я відповідав за дизайн сайту.
 
-Ipsum adipisicing exercitation dolor pariatur labore qui. Culpa cupidatat ea elit eiusmod tempor ea qui dolor Lorem laborum adipisicing. Ad ea laboris qui cupidatat deserunt culpa. Nulla ex velit adipisicing proident fugiat deserunt sunt eu adipisicing sint incididunt quis qui. Nulla fugiat labore duis ullamco reprehenderit excepteur laboris tempor ullamco aliquip laborum aliqua. Est tempor nisi magna ut elit pariatur commodo.
+Однією з основних характеристик проєкту є привітна головна сторінка з фотографією будинку та відгуками з Facebook, які підкреслюють переваги перебування тут. На сторінці "Про нас" розміщено інтерактивний слайдер із фотографіями об'єкта та вкладки з інформацією про будинок, околиці, умови оренди та способи пересування.
 
-Labore commodo do incididunt amet ad et exercitation magna veniam veniam aute laboris excepteur occaecat Lorem. Fugiat in magna commodo magna nulla eu. Fugiat nulla aliqua sunt duis enim irure aliquip fugiat aliqua Lorem ad tempor incididunt proident incididunt. Labore fugiat tempor esse cillum voluptate culpa anim sunt consequat. Ipsum minim nostrud laborum sit aliquip duis officia consequat est. Fugiat mollit elit nulla. Sit minim est elit labore. Sunt eu pariatur pariatur ut deserunt nulla labore in non sit tempor voluptate ex.
+На сторінці "Околиці" представлені місцеві об'єкти з можливостями пагінації, фільтрації, сортування та обмеження кількості відображених елементів. Кожен об'єкт має власну сторінку з картою, що показує його розташування відносно будинку, фотографією та описом. Для кожного місця також надано посилання на маршрути, згенеровані в Google Maps.
+
+На вкладці "Контакти" включено цінову структуру та календар, що показує заброньовані дати. Нижче наведено короткий опис умов бронювання та важливу інформацію для орендарів. Для тих, хто потребує допомоги, також є акордеон з контактною інформацією власника та його помічника.
+
+Загалом, цей проєкт успішно спрощує процес оренди будинку в Іспанії, надаючи потенційним орендарям легко зрозумілу інформацію. Веб-сайт значно покращує досвід користувачів завдяки таким функціям, як детальні описи власності та місцеві пам'ятки. Використання сучасних технологій, таких як React, Express.js і MongoDB, забезпечує задоволення потреб як орендарів, так і власників, роблячи його цінним інструментом для туристів, які шукають комфортне проживання.

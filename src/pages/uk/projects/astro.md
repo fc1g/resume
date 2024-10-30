@@ -1,17 +1,21 @@
 ---
 layout: ../../../layouts/Project.astro
-badges: 'Astro,Tailwind CSS,shadcn,React'
-title: 'Lorem, ipsum dolor.'
-subtitle: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
-description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
+badges: ['Astro', 'Tailwind', 'Shadcn', 'React', 'Typescript']
+title: 'Резюме'
+subtitle: 'Особистий сайт-резюме, створений на Astro для демонстрації моїх навичок'
+imagePath: 'resumeWebPicture.webp'
+imageAltText: 'Людина набирає текст на клавіатурі ноутбука, на фоні розмитий монітор.'
+data: [{ href: 'https://github.com/fc1g/resume', label: 'Код' }]
 ---
 
-Nisi duis ex aliqua eu officia eiusmod duis magna pariatur. Irure laborum qui aliqua nulla esse cillum laborum aliquip nulla elit. Id id Lorem duis irure cillum culpa. Nulla sint et aliqua velit do. Nulla sit sit proident consectetur enim ullamco aliqua in reprehenderit ullamco officia.
+Цей сайт-резюме, створений за допомогою Astro, демонструє мої навички у фронтенд-розробці. Він не лише надає компаніям і рекрутерам миттєвий доступ до деталей про мій досвід, а й зручно показує мою роботу з сучасними фреймворками завдяки адаптивному дизайну та багатомовності.
 
-Ad ipsum velit sint enim exercitation mollit consequat elit mollit qui commodo aute. Laboris culpa voluptate aliquip incididunt duis. Cupidatat aliquip et sunt aute fugiat cupidatat irure voluptate. Occaecat officia et sunt.
+Для стилізації я використав Tailwind CSS та Shadcn, а для створення швидкого та оптимізованого сайту — Astro. Для динамічних компонентів я обрав TypeScript та React, що підвищує надійність коду.
 
-Officia tempor voluptate enim consequat cillum aute fugiat cupidatat incididunt magna labore in commodo. Eiusmod nostrud non deserunt. Incididunt excepteur pariatur magna. Proident aute ad in velit labore enim sit cillum ad mollit proident et qui. Esse sunt ullamco ullamco ipsum enim eu esse id eu exercitation laboris magna Lorem. Anim nostrud officia anim velit do exercitation labore mollit excepteur excepteur ex.
+Основними цілями проєкту були продемонструвати моє портфоліо проєктів у зручному форматі та створити інтерактивний сайт-резюме, який відображає мої навички у веб-розробці. Завдяки цьому проєкту я зміг експериментувати зі створенням адаптивного та багатомовного інтерфейсу, а також забезпечити швидке завантаження сайту.
 
-Ipsum adipisicing exercitation dolor pariatur labore qui. Culpa cupidatat ea elit eiusmod tempor ea qui dolor Lorem laborum adipisicing. Ad ea laboris qui cupidatat deserunt culpa. Nulla ex velit adipisicing proident fugiat deserunt sunt eu adipisicing sint incididunt quis qui. Nulla fugiat labore duis ullamco reprehenderit excepteur laboris tempor ullamco aliquip laborum aliqua. Est tempor nisi magna ut elit pariatur commodo.
+Я працював над усіма етапами розробки: від дизайну та планування до написання коду та оптимізації. Я повністю реалізував фронтенд за допомогою Astro, налаштував стилі, використав TypeScript і React для створення динамічних компонентів і забезпечив адаптивність та багатомовність сайту.
 
-Labore commodo do incididunt amet ad et exercitation magna veniam veniam aute laboris excepteur occaecat Lorem. Fugiat in magna commodo magna nulla eu. Fugiat nulla aliqua sunt duis enim irure aliquip fugiat aliqua Lorem ad tempor incididunt proident incididunt. Labore fugiat tempor esse cillum voluptate culpa anim sunt consequat. Ipsum minim nostrud laborum sit aliquip duis officia consequat est. Fugiat mollit elit nulla. Sit minim est elit labore. Sunt eu pariatur pariatur ut deserunt nulla labore in non sit tempor voluptate ex.
+Основні характеристики проєкту включають підтримку кількох мов, мобільний дизайн, інтерактивне портфоліо та сучасну стилізацію. Оптимізація гарантує швидке завантаження та зручну навігацію, а динамічні компоненти підвищують безпеку коду.
+
+Під час цього проєкту я отримав багато знань та навичок, освоївши Astro як потужний інструмент для створення швидких сайтів. Хоча це мій перший сайт, створений за допомогою Astro, він не буде останнім, адже я впевнений у потенціалі цієї технології та маю намір використовувати її в інших проєктах у майбутньому.

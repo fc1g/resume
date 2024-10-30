@@ -1,0 +1,67 @@
+---
+import { Button } from '@/components/ui/button';
+
+import resume from '@/../public/resume.pdf';
+import { IoDocumentOutline, IoMailOutline } from 'react-icons/io5';
+
+import { getLangFromUrl, useTranslations } from '@/i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<section class="mb-8 mt-6">
+  <ul
+    class="mx-auto flex max-w-screen-lg flex-col items-center justify-center gap-4 sm:flex-row"
+  >
+    <li class="flex w-52 items-center space-x-2 sm:flex-1 sm:justify-center">
+      <div
+        aria-label={t('contacts.email')}
+        class="rounded-xl bg-primary-foreground p-4"
+      >
+        <IoMailOutline className="size-6" />
+      </div>
+
+      <div>
+        <h3 class="text-left text-lg font-semibold">{t('contacts.email')}</h3>
+        <Button className="p-1" variant="link" size={null}>
+          <a
+            tabindex="-1"
+            class="text-muted-foreground"
+            href="mailto:it.fc1g@gmail.com">it.fc1g@gmail.com</a
+          >
+        </Button>
+      </div>
+    </li>
+
+    <li class="flex w-52 items-center space-x-2 sm:flex-1 sm:justify-center">
+      <div
+        aria-label={t('contacts.documentIcon')}
+        class="rounded-xl bg-primary-foreground p-4"
+      >
+        <IoDocumentOutline className="size-6" />
+      </div>
+
+      <div>
+        <h3 class="text-left text-lg font-semibold">
+          {t('contacts.certificates')}
+        </h3>
+        <Button className="p-1" variant="link" size={null}>
+          <a
+            target="_blank"
+            tabindex="-1"
+            class="text-muted-foreground"
+            href="https://drive.google.com/drive/folders/1H1KzOjW1IrojUKOqiCIVoOJL_p6ORExs?usp=sharing"
+            >{t('contacts.checkout')}</a
+          >
+        </Button>
+      </div>
+    </li>
+  </ul>
+
+  <div class="mt-8 flex items-center justify-center">
+    <a tabindex="-1" download href={resume}>
+      <Button>{t('contacts.download')}</Button>
+    </a>
+  </div>
+</section>

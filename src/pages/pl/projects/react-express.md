@@ -1,17 +1,28 @@
 ---
 layout: ../../../layouts/Project.astro
-badges: 'Astro,Tailwind CSS,shadcn,React'
-title: 'Lorem, ipsum dolor.'
-subtitle: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
-description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
+badges: ['React', 'Typescript', 'Express', 'Tailwind CSS', 'Mongodb']
+title: 'CasaBlanca (Stara wersja)'
+subtitle: 'Ten projekt to strona internetowa dla wynajmu domu w Hiszpanii na wakacje.'
+imagePath: 'terasaEnter.webp'
+imageAltText: 'Nowoczesny taras na dachu z dwoma leżakami, małym stolikiem bocznym i szklaną balustradą. Schody prowadzą na wyższy poziom. Biały budynek z zewnątrz pod czystym, niebieskim niebem.'
+data:
+  [
+    { href: 'https://casa-blanca-lovat.vercel.app', label: 'Strona' },
+    { href: 'https://github.com/fc1g/casaBlanca', label: 'Kod' },
+    { href: 'https://github.com/fc1g/casaServer', label: 'Kod serwera' },
+  ]
 ---
 
-Nisi duis ex aliqua eu officia eiusmod duis magna pariatur. Irure laborum qui aliqua nulla esse cillum laborum aliquip nulla elit. Id id Lorem duis irure cillum culpa. Nulla sint et aliqua velit do. Nulla sit sit proident consectetur enim ullamco aliqua in reprehenderit ullamco officia.
+Ten projekt to strona internetowa stworzona w celu prezentacji wynajmowanego domu w Hiszpanii, skierowana do potencjalnych najemców, którzy szukają przytulnego miejsca na pobyt. Nowoczesny i responsywny design strony internetowej poprawia doświadczenia użytkowników.
 
-Ad ipsum velit sint enim exercitation mollit consequat elit mollit qui commodo aute. Laboris culpa voluptate aliquip incididunt duis. Cupidatat aliquip et sunt aute fugiat cupidatat irure voluptate. Occaecat officia et sunt.
+Postanowiłem użyć Reacta dla front-endu, ponieważ umożliwia on dynamiczne wyświetlanie szczegółów dotyczących domu, w tym zdjęć, opisów i innych ważnych informacji. Backend działa na bazie Express.js, który odpowiada za zarządzanie danymi o nieruchomości i obsługę żądań. Wszystkie dane dotyczące domu i rezerwacji są przechowywane w bazie danych MongoDB. Użyłem Tailwind CSS do stylizacji interfejsu, co nadaje mu schludny i stylowy wygląd.
 
-Officia tempor voluptate enim consequat cillum aute fugiat cupidatat incididunt magna labore in commodo. Eiusmod nostrud non deserunt. Incididunt excepteur pariatur magna. Proident aute ad in velit labore enim sit cillum ad mollit proident et qui. Esse sunt ullamco ullamco ipsum enim eu esse id eu exercitation laboris magna Lorem. Anim nostrud officia anim velit do exercitation labore mollit excepteur excepteur ex.
+Głównym celem projektu jest uproszczenie procesu rezerwacji wynajmowanego domu i dostarczenie użytkownikom wszelkich niezbędnych informacji do podjęcia świadomych decyzji. Jako główny programista projektu odpowiadałem za integrację komponentów front-end i back-end oraz ich wdrożenie. Odpowiadałem również za projekt strony.
 
-Ipsum adipisicing exercitation dolor pariatur labore qui. Culpa cupidatat ea elit eiusmod tempor ea qui dolor Lorem laborum adipisicing. Ad ea laboris qui cupidatat deserunt culpa. Nulla ex velit adipisicing proident fugiat deserunt sunt eu adipisicing sint incididunt quis qui. Nulla fugiat labore duis ullamco reprehenderit excepteur laboris tempor ullamco aliquip laborum aliqua. Est tempor nisi magna ut elit pariatur commodo.
+Jedną z głównych cech projektu jest przyjazna strona główna z fotografią domu oraz opiniami z Facebooka, które podkreślają zalety pobytu tutaj. Na stronie "O nas" znajduje się interaktywny suwak ze zdjęciami obiektu oraz zakładki z informacjami o domu, okolicy, warunkach wynajmu oraz możliwościach transportu.
 
-Labore commodo do incididunt amet ad et exercitation magna veniam veniam aute laboris excepteur occaecat Lorem. Fugiat in magna commodo magna nulla eu. Fugiat nulla aliqua sunt duis enim irure aliquip fugiat aliqua Lorem ad tempor incididunt proident incididunt. Labore fugiat tempor esse cillum voluptate culpa anim sunt consequat. Ipsum minim nostrud laborum sit aliquip duis officia consequat est. Fugiat mollit elit nulla. Sit minim est elit labore. Sunt eu pariatur pariatur ut deserunt nulla labore in non sit tempor voluptate ex.
+Na stronie "Okolica" przedstawione są lokalne obiekty z możliwością paginacji, filtrowania, sortowania i ograniczenia liczby wyświetlanych elementów. Każdy obiekt ma swoją stronę z mapą pokazującą jego lokalizację w stosunku do domu, zdjęciem i opisem. Dla każdego miejsca podano również linki do tras generowanych w Google Maps.
+
+Na zakładce "Kontakt" zawarta jest struktura cenowa oraz kalendarz pokazujący zarezerwowane daty. Poniżej znajduje się krótki opis warunków rezerwacji oraz ważne informacje dla najemców. Dla osób potrzebujących pomocy dostępny jest także akordeon z informacjami kontaktowymi właściciela i jego asystenta.
+
+Ogólnie rzecz biorąc, projekt ten skutecznie upraszcza proces wynajmu domu w Hiszpanii, dostarczając potencjalnym najemcom łatwo przyswajalnych informacji. Strona internetowa znacząco poprawia doświadczenia użytkowników dzięki takim funkcjom, jak szczegółowe opisy nieruchomości i lokalnych atrakcji. Wykorzystanie nowoczesnych technologii, takich jak React, Express.js i MongoDB, zaspokaja potrzeby zarówno najemców, jak i właścicieli, czyniąc go cennym narzędziem dla turystów, którzy szukają komfortowego zakwaterowania.

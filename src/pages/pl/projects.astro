@@ -10,12 +10,12 @@ const t = useTranslations(lang);
 
 const data = await Astro.glob<{
   title: string;
-  description: string;
+  subtitle: string;
 }>('./projects/*.md');
 ---
 
 <Main>
-  <div class="mt-2 pb-8 pt-2 sm:ml-32">
+  <div class="mt-2 pb-8 pt-2 sm:ml-[7.5rem] md:ml-32">
     <Title
       className="text-center sm:text-start"
       title={t('projects.title')}
