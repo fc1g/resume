@@ -1,0 +1,38 @@
+---
+import { Button } from '@/components/ui/button';
+import Base from '@/layouts/Base.astro';
+
+import { getLangFromUrl, useTranslations } from '@/i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+type Props = {
+  error: Error;
+};
+
+const { error } = Astro.props;
+---
+
+<Base>
+  <section class="flex h-screen w-full items-center justify-center">
+    <div class="px-4 text-center lg:px-6">
+      <h1
+        class="mb-4 text-7xl font-extrabold tracking-tight text-primary lg:text-9xl"
+      >
+        {error.name}
+      </h1>
+      <p
+        class="mb-4 text-3xl font-bold tracking-tight text-secondary-foreground md:text-4xl"
+      >
+        {`${t('error.pity')}: ${error?.message}`}
+      </p>
+      <p class="mb-4 text-lg font-light text-muted-foreground">
+        {t('error.message')}
+      </p>
+      <a href={`/${lang}`}>
+        <Button variant="default"> {t('notFound.back')} </Button>
+      </a>
+    </div>
+  </section>
+</Base>

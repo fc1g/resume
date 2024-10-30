@@ -51,5 +51,8 @@
 
   "notFound.message": "Brakująca zawartość",
   "notFound.description": "Przepraszamy, nie możemy znaleźć tej strony. Na stronie głównej znajdziesz wiele ciekawych rzeczy",
-  "notFound.back": "Powrót do strony głównej"
+  "notFound.back": "Powrót do strony głównej",
+
+  "error.message": "Już pracujemy nad rozwiązaniem problemu.",
+  "pity": "Niestety, wystąpił błąd."
 }

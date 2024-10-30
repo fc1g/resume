@@ -27,9 +27,13 @@ const t = useTranslations(lang);
               variant="link"
               size="sm"
             >
-              <a tabindex="-1" href={href}>
-                {' '}
-                {label}{' '}
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                tabindex="-1"
+                href={href}
+              >
+                {label}
               </a>
             </Button>
 

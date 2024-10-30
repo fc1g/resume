@@ -21,14 +21,14 @@ export default function NavBar({ lang, route, className }: NavBarProps) {
   return (
     <nav>
       <ul className={className}>
-        {data.map(({ href, label }) => {
+        {data.map(({ href, label }, i) => {
           const isActive = route === href || `${href}/` === route;
-          const linkStyles = `px-2 ${isActive ? 'rounded bg-primary text-primary-foreground' : 'text-muted-foreground hover:text-primary'}`;
+          const linkStyles = `px-2 py-1 ${isActive ? 'rounded bg-primary text-primary-foreground' : 'text-muted-foreground hover:text-primary'}`;
 
           return (
             <li key={label} className={linkStyles}>
               <a
-                className="focus inline-block w-full"
+                className="focus inline-block w-full sm:inline"
                 href={translatePath(href)}
               >
                 {t(`nav.${label as Label}`)}
