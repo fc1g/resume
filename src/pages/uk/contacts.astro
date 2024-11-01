@@ -1,5 +1,5 @@
 ---
-import Title from '@/components/Title.astro';
+import PageTitle from '@/containers/PageTitle.astro';
 import SocialInfo from '@/containers/contacts/SocialInfo.astro';
 import Main from '@/layouts/Main.astro';
 
@@ -10,13 +10,7 @@ const t = useTranslations(lang);
 ---
 
 <Main>
-  <div class="mt-2 pb-8 pt-2 sm:ml-[7.5rem] md:ml-32">
-    <Title
-      className="text-center sm:text-start"
-      title={t('contacts.title')}
-      subtitle={t('contacts.subtitle')}
-    />
-  </div>
+  <PageTitle title={t('contacts.title')} subtitle={t('contacts.subtitle')} />
 
   <SocialInfo />
 </Main>

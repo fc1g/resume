@@ -1,5 +1,6 @@
 ---
-import myPhoto from '@/../public/image.webp';
+import dark from '@/../public/images/dark.webp';
+import light from '@/../public/images/light.webp';
 import Title from '@/components/Title.astro';
 import { getLangFromUrl, useTranslations } from '@/i18n/utils';
 import Image from 'astro/components/Image.astro';
@@ -9,14 +10,22 @@ const t = useTranslations(lang);
 ---
 
 <section
-  class="mt-2 flex flex-col items-center justify-center pb-8 pt-2 sm:flex-row sm:items-start"
+  class="mt-2 flex flex-col items-center justify-center pb-8 pt-2 md:flex-row md:items-start"
 >
   <Image
     loading="eager"
     decoding="async"
-    src={myPhoto}
+    src={light}
     alt={`${t('homepage.hero.title')}'s website`}
-    class="sm:w-22 sm:h-22 mb-4 h-20 w-20 rounded-full object-cover sm:mb-0 sm:mr-8 md:h-24 md:w-24"
+    class="mb-4 h-24 w-24 rounded-full object-cover object-bottom dark:hidden sm:mb-0 sm:mr-8 sm:h-28 sm:w-28"
+  />
+
+  <Image
+    loading="eager"
+    decoding="async"
+    src={dark}
+    alt={`${t('homepage.hero.title')}'s website`}
+    class="mb-4 hidden h-24 w-24 rounded-full object-cover object-bottom dark:block sm:mb-0 sm:mr-8 sm:h-28 sm:w-28"
   />
 
   <div>

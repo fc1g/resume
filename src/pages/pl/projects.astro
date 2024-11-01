@@ -1,5 +1,5 @@
 ---
-import Title from '@/components/Title.astro';
+import PageTitle from '@/containers/PageTitle.astro';
 import Main from '@/layouts/Main.astro';
 
 import ProjectsList from '@/containers/projects/ProjectsList.astro';
@@ -15,13 +15,7 @@ const data = await Astro.glob<{
 ---
 
 <Main>
-  <div class="mt-2 pb-8 pt-2 sm:ml-[7.5rem] md:ml-32">
-    <Title
-      className="text-center sm:text-start"
-      title={t('projects.title')}
-      subtitle={t('projects.subtitle')}
-    />
-  </div>
+  <PageTitle title={t('projects.title')} subtitle={t('projects.subtitle')} />
 
   <ProjectsList data={data} />
 </Main>

@@ -1,0 +1,18 @@
+---
+import Title from '@/components/Title.astro';
+
+type Props = {
+  title: string;
+  subtitle: string;
+};
+
+const { title, subtitle } = Astro.props;
+---
+
+<div class="mt-2 pb-8 pt-2 md:ml-[8.4rem] lg:ml-36">
+  <Title
+    className="text-center sm:text-start"
+    title={title}
+    subtitle={subtitle}
+  />
+</div>
