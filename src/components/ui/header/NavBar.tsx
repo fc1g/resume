@@ -20,8 +20,8 @@ export default function NavBar({ lang, route, className }: NavBarProps) {
 
   return (
     <nav>
-      <ul className={className}>
-        {data.map(({ href, label }, i) => {
+      <ul aria-label="navigation" className={className}>
+        {data.map(({ href, label }) => {
           const isActive = route === href || `${href}/` === route;
           const linkStyles = `px-2 py-1 ${isActive ? 'rounded bg-primary text-primary-foreground' : 'text-muted-foreground hover:text-primary'}`;
 

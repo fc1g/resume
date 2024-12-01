@@ -1,9 +1,27 @@
 ---
 import { getLangFromUrl } from '@/i18n/utils';
-import WrappedHeader from './WrappedHeader';
+import DarkMode from './DarkMode';
+import Hamburger from './Hamburger';
+import LangList from './LangList';
+import NavBar from './NavBar';
 
 const lang = getLangFromUrl(Astro.url);
 const [, route] = Astro.url.pathname.split(lang);
 ---
 
-<WrappedHeader client:load lang={lang} route={route} />
+<header class="flex items-center justify-between p-4 md:p-8">
+  <Hamburger client:load lang={lang} route={route} />
+
+  <NavBar
+    client:load
+    className="hidden items-center justify-center gap-8 sm:flex"
+    lang={lang}
+    route={route}
+  />
+
+  <div class="flex items-center gap-4">
+    <DarkMode client:load lang={lang} />
+
+    <LangList client:load lang={lang} route={route} />
+  </div>
+</header>
